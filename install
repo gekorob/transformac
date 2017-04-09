@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+sudo softwareupdate -ia
+
+echo 'export PATH=/usr/local/bin:/usr/local/sbin:$PATH' > ~/.profile
+
+
+#brew 
+export HOMEBREW_ANALYTICS=1
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+if [ $(xcode-select -p) != "/Applications/Xcode.app/Contents/Developer" ]; then
+   xcode-select --install
+fi
+
+brew doctor
+brew bundle --file="./Brewfile"
+xcrun simctl delete unavailable
+
+#ruby
+curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
