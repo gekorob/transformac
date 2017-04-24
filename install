@@ -6,8 +6,16 @@ sudo softwareupdate -ia
 
 echo 'export PATH=/usr/local/bin:/usr/local/sbin:$PATH' > ~/.profile
 
+source ./osx_general
+source ./osx_energy_management
+source ./osx_finder_setup
+source ./osx_dock_setup
+source ./osx_trackpad_mouse_setup
 
-source ./finder_setup
+killall Finder || true
+killall Dock || true
+killall SystemUIServer || true
+
 
 #brew 
 export HOMEBREW_ANALYTICS=1
@@ -19,6 +27,7 @@ if [[ ! -x /usr/local/bin/brew ]]; then
 fi
 
 if [ $(xcode-select -p) != "/Applications/Xcode.app/Contents/Developer" ]; then
+   echo "cannot find command line tools"
    xcode-select --install
 fi
 
