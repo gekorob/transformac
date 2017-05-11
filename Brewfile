@@ -49,7 +49,8 @@ cask 'java'
 cask 'atom'
 cask 'google-cloud-sdk'
 cask 'slack'
-
+cask 'pomello'
+cask 'visual-studio-code'
 
 mas 'Xcode', id: 497799835
 mas 'Day One', id: 1055511498
