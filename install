@@ -17,7 +17,7 @@ killall Dock || true
 killall SystemUIServer || true
 
 
-#brew 
+#brew
 export HOMEBREW_ANALYTICS=1
 
 # Download and install Homebrew
@@ -26,14 +26,39 @@ if [[ ! -x /usr/local/bin/brew ]]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+#xcode
 if [ $(xcode-select -p) != "/Applications/Xcode.app/Contents/Developer" ]; then
    echo "cannot find command line tools"
    xcode-select --install
 fi
+sudo xcodebuild -license accept || true
 
-#brew doctor
-#brew bundle --file="./Brewfile"
-#xcrun simctl delete unavailable
+brew doctor
+brew bundle --file="./Brewfile"
+xcrun simctl delete unavailable
+
+#font
+wget -N -O ~/Library/Fonts/Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Inconsolata/complete/Inconsolata%20for%20Powerline%20Nerd%20Font%20Complete.otf
+
+#atom
+source ./atom_setup
 
 #ruby
-#curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+rvm reload
+gem install bundler
+
+#vagrant
+source ./vagrant_setup
+
+#nvm
+/usr/local/bin/nvm install node
+/usr/local/bin/nvm install --lts
+/usr/local/bin/nvm alias default node
+/usr/local/bin/nvm use default
+
+#powerline
+/usr/local/bin/pip install pip
+/usr/local/bin/pip install setuptools
+/usr/local/bin/pip install psutil
+/usr/local/bin/pip install powerline-status

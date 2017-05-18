@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/usr/local/bin/apm install ex-mode
+/usr/local/bin/apm install vim-mode
+/usr/local/bin/apm install seti-ui
+/usr/local/bin/apm install seti-syntax

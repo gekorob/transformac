@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 tap 'buo/cask-upgrade'
 tap 'homebrew/bundle'
 
@@ -24,6 +25,7 @@ brew 'midnight-commander'
 brew 'mongodb'
 brew 'nvm'
 brew 'watchman'
+brew 'gnu-sed'
 
 cask 'google-chrome'
 cask 'firefox'
@@ -51,6 +53,7 @@ cask 'google-cloud-sdk'
 cask 'slack'
 cask 'pomello'
 cask 'visual-studio-code'
+cask 'mongodb-compass-beta'
 
 mas 'Xcode', id: 497799835
 mas 'Day One', id: 1055511498
