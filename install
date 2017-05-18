@@ -6,11 +6,11 @@ sudo softwareupdate -ia
 
 echo 'export PATH=/usr/local/bin:/usr/local/sbin:$PATH' > ~/.profile
 
-source ./osx_general
-source ./osx_energy_management
-source ./osx_finder_setup
-source ./osx_dock_setup
-source ./osx_trackpad_mouse_setup
+source $BASEPATH/osx_general
+source $BASEPATH/osx_energy_management
+source $BASEPATH/osx_finder_setup
+source $BASEPATH/osx_dock_setup
+source $BASEPATH/osx_trackpad_mouse_setup
 
 killall Finder || true
 killall Dock || true
@@ -41,7 +41,7 @@ xcrun simctl delete unavailable
 wget -N -O ~/Library/Fonts/Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Inconsolata/complete/Inconsolata%20for%20Powerline%20Nerd%20Font%20Complete.otf
 
 #atom
-source ./atom_setup
+source $BASEPATH/atom_setup
 
 #ruby
 curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
@@ -49,7 +49,7 @@ rvm reload
 gem install bundler
 
 #vagrant
-source ./vagrant_setup
+source $BASEPATH/vagrant_setup
 
 #nvm
 /usr/local/bin/nvm install node

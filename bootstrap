@@ -2,13 +2,13 @@
 
 set -e
 
-path="$HOME/.transformac"
+BASEPATH="$HOME/.transformac"
 
 if [ -e $path/.git ]; then
-  cd $path && git pull
+  cd $BASEPATH && git pull
 else
-  git clone https://github.com/gekorob/transformac.git $path
+  git clone https://github.com/gekorob/transformac.git $BASEPATH
 fi
 
-ln -sf $path/Brewfile ~/.Brewfile
-sh $path/install
+ln -sf $BASEPATH/Brewfile ~/.Brewfile
+source $BASEPATH/install
