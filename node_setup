@@ -8,7 +8,7 @@ nvm use default
 
 NVM_DIR="export NVM_DIR=\"\$HOME/.nvm\""
 
-grep -q "$NVM_DIR" $HOME/.zshrc || echo $NVM_DIR >> $HOME/.zshrc
+#grep -q "$NVM_DIR" $HOME/.zshrc || echo $NVM_DIR >> $HOME/.zshrc
 grep -q "$NVM_DIR" $HOME/.bashrc || echo $NVM_DIR >> $HOME/.bashrc
-grep -q "nvm.sh" $HOME/.zshrc || echo "source \$(brew --prefix nvm)/nvm.sh" >> $HOME/.zshrc
+#grep -q "nvm.sh" $HOME/.zshrc || echo "source \$(brew --prefix nvm)/nvm.sh" >> $HOME/.zshrc
 grep -q "nvm.sh" $HOME/.bashrc || echo "source \$(brew --prefix nvm)/nvm.sh" >> $HOME/.bashrc
