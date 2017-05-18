@@ -50,10 +50,10 @@ source $BASEPATH/atom_setup
 source $BASEPATH/vagrant_setup
 
 #nvm
-/usr/local/bin/nvm install node
-/usr/local/bin/nvm install --lts
-/usr/local/bin/nvm alias default node
-/usr/local/bin/nvm use default
+nvm install node
+nvm install --lts
+nvm alias default node
+nvm use default
 
 #powerline
 /usr/local/bin/pip install pip
