@@ -44,7 +44,7 @@ wget -N -O ~/Library/Fonts/Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete.otf
 source $BASEPATH/atom_setup
 
 #ruby
-curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby || true
 rvm reload
 gem install bundler
 
