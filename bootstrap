@@ -2,7 +2,7 @@
 
 set -e
 
-path="#HOME/.transformac"
+path="$HOME/.transformac"
 
 if [ -e $path/.git ]; then
   cd $path && git pull
