@@ -34,7 +34,7 @@ fi
 sudo xcodebuild -license accept || true
 
 brew doctor
-brew bundle --file="./Brewfile"
+brew bundle --file="$BASEPATH/Brewfile"
 xcrun simctl delete unavailable
 
 #font
