@@ -4,7 +4,7 @@ set -e
 
 BASEPATH="$HOME/.transformac"
 
-if [ -e $path/.git ]; then
+if [ -e $BASEPATH/.git ]; then
   cd $BASEPATH && git pull
 else
   git clone https://github.com/gekorob/transformac.git $BASEPATH
