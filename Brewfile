@@ -26,6 +26,7 @@ brew 'mongodb'
 brew 'nvm'
 brew 'watchman'
 brew 'gnu-sed'
+brew 'curl'
 
 cask 'google-chrome'
 cask 'firefox'
