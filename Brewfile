@@ -6,6 +6,7 @@ tap 'buo/cask-upgrade'
 tap 'homebrew/bundle'
 
 brew 'mas'
+brew 'ripgrep'
 brew 'ack'
 brew 'wget'
 brew 'unrar'
