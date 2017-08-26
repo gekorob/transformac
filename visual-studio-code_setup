@@ -1,0 +1,26 @@
+#!/bin/bash
+
+/usr/local/bin/code --install-extension vscodevim.vim
+/usr/local/bin/code --install-extension eg2.tslint
+/usr/local/bin/code --install-extension dbaeumer.vscode-eslint
+/usr/local/bin/code --install-extension formulahendry.code-runner
+/usr/local/bin/code --install-extension PKief.material-icon-theme
+/usr/local/bin/code --install-extension msjsdiag.debugger-for-chrome
+/usr/local/bin/code --install-extension DavidAnson.vscode-markdownlint
+/usr/local/bin/code --install-extension christian-kohler.npm-intellisense
+/usr/local/bin/code --install-extension christian-kohler.path-intellisense
+/usr/local/bin/code --install-extension donjayamanne.python
+/usr/local/bin/code --install-extension ms-vscode.cpptools
+/usr/local/bin/code --install-extension robertohuertasm.vscode-icons
+/usr/local/bin/code --install-extension donjayamanne.githistory
+/usr/local/bin/code --install-extension PeterJausovec.vscode-docker
+/usr/local/bin/code --install-extension xabikos.javascriptsnippets
+/usr/local/bin/code --install-extension eamodio.gitlens
+/usr/local/bin/code --install-extension idleberg.icon-fonts
+/usr/local/bin/code --install-extension alefragnani.project-manager
+/usr/local/bin/code --install-extension IBM.output-colorizer
+/usr/local/bin/code --install-extension Shan.code-settings-sync
+/usr/local/bin/code --install-extension humao.rest-client
+/usr/local/bin/code --install-extension zhuangtongfa.material-theme
+/usr/local/bin/code --install-extension rebornix.ruby
+/usr/local/bin/code --install-extension HookyQR.beautify
