@@ -26,3 +26,4 @@
 /usr/local/bin/code --install-extension HookyQR.beautify
 /usr/local/bin/code --install-extension esbenp.prettier-vscode
 /usr/local/bin/code --install-extension cmstead.jsrefactor
+/usr/local/bin/code --install-extension joshpeng.sublime-babel-vscode
