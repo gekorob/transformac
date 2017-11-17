@@ -9,7 +9,7 @@
 /usr/local/bin/code --install-extension DavidAnson.vscode-markdownlint
 /usr/local/bin/code --install-extension christian-kohler.npm-intellisense
 /usr/local/bin/code --install-extension christian-kohler.path-intellisense
-/usr/local/bin/code --install-extension donjayamanne.python
+/usr/local/bin/code --install-extension ms-python.python
 /usr/local/bin/code --install-extension ms-vscode.cpptools
 /usr/local/bin/code --install-extension robertohuertasm.vscode-icons
 /usr/local/bin/code --install-extension donjayamanne.githistory
@@ -27,3 +27,4 @@
 /usr/local/bin/code --install-extension esbenp.prettier-vscode
 /usr/local/bin/code --install-extension cmstead.jsrefactor
 /usr/local/bin/code --install-extension joshpeng.sublime-babel-vscode
+/usr/local/bin/code --install-extension eg2.vscode-npm-script
