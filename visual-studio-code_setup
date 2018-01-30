@@ -28,3 +28,4 @@
 /usr/local/bin/code --install-extension cmstead.jsrefactor
 /usr/local/bin/code --install-extension joshpeng.sublime-babel-vscode
 /usr/local/bin/code --install-extension eg2.vscode-npm-script
+/usr/local/bin/code --install-extension lukehoban.go
