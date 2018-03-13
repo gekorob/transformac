@@ -60,7 +60,7 @@ sh $BASEPATH/visual_studio_code_setup
 echo pre-pip installation
 
 #powerline
-/usr/local/bin/pip install pip
-/usr/local/bin/pip install setuptools
-/usr/local/bin/pip install psutil
-/usr/local/bin/pip install powerline-status
+/usr/local/bin/pip3 install pip
+/usr/local/bin/pip3 install setuptools
+/usr/local/bin/pip3 install psutil
+/usr/local/bin/pip3 install powerline-status
