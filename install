@@ -64,3 +64,6 @@ echo pre-pip installation
 /usr/local/bin/pip3 install setuptools
 /usr/local/bin/pip3 install psutil
 /usr/local/bin/pip3 install powerline-status
+
+#vim
+brew install vim --with-override-system-vi
