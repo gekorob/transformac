@@ -57,8 +57,6 @@ cask 'vlc'
 cask 'java'
 cask 'atom'
 cask 'google-cloud-sdk'
-#cask 'slack'
-cask 'pomello'
 cask 'visual-studio-code'
 cask 'mongodb-compass-beta'
 
