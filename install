@@ -67,3 +67,6 @@ echo pre-pip installation
 
 #vim
 brew install vim --with-override-system-vi
+
+#zsh
+brew install zsh
